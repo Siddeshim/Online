@@ -1,0 +1,65 @@
+"use strict";
+	
+
+
+	// number count for stats, using jQuery animate
+
+$('.counting').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+
+    $({
+        countNum: $this.text()
+    }).animate({
+            countNum: countTo
+        },
+
+        {
+
+            duration: 3000,
+            easing: 'linear',
+            step: function() {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+            }
+
+        });
+
+
+});
+
+	//achevers-carousel
+	if ($('.achievers-carousel').length)
+	{
+		$('.achievers-carousel').owlCarousel({
+			
+			loop: true,
+			margin: 30,
+			nav: true,
+			smartSpeed: 3000,
+			autoplay: 4000,
+			items: 3,
+			navText: ['<span class="fa fa-caret-left"></span>', '<span class="fa fa-caret-right"></span>'],
+			navText: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				480: {
+					items: 2
+				},
+				600: {
+					items: 3
+				},
+			
+			}
+		});
+	}
+
+/****know Placement */
+
+
+

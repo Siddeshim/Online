@@ -1,0 +1,332 @@
+/*FONTS IMPORT*/  
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+/*font-family: 'Maven Pro', sans-serif;*/
+
+
+.heading-font{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+}
+.quote-text {
+      font-size: 30px;
+      line-height: 1.2;
+      text-align: center
+  }
+
+  .quote-text::before {
+      /*content: url('../../assets/images/home/quote-img.png');
+      width: 20px;
+      height: 20px;*/
+      display: inline-block;
+      height: 80px;
+      width: 80px;
+      margin-right: 5px;
+      content: "";
+      background: url(../../assets/images/home/quote-img.png) no-repeat 0 0;
+      background-size: 80px 80px;
+  }
+
+  .quote-text::after {
+      /*
+      content: url('../../assets/images/home/quote-img-close.png');
+      position: absolute;*/
+
+      position: absolute;
+      display: inline-block;
+      height: 80px;
+      width: 80px;
+      margin-right: 5px;
+      content: "";
+      background: url(../../assets/images/home/quote-img-close.png) no-repeat 0 0;
+      background-size: 80px 80px;
+  }
+
+  .big-text {
+      font-size: 50px;
+      font-weight: bolder;
+      line-height: 0.9;
+  }
+
+  @font-face {
+      font-family: 'abovefont';
+      src: url('../fonts/above_bold_pro-webfont.ttf');
+  }
+
+  .slide__content .main-name {
+      font-size: 58px;
+      display: block;
+      line-height: normal;
+      font-family: 'abovefont';
+  }
+
+  .typed-text {
+      font-size: 30px;
+  }
+
+  @media screen and (min-width: 400px) {
+      .quote-text {
+          font-size: 18px;
+          line-height: 1.7;
+          text-align: center
+      }
+
+      .big-text {
+          font-size: 30px;
+          font-weight: bolder;
+          line-height: 0.9;
+      }
+
+      .quote-text::before {
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          margin-right: 5px;
+          content: "";
+          background: url(../../assets/images/home/quote-img.png) no-repeat 0 0;
+          background-size: 50px 50px;
+      }
+
+      .quote-text::after {
+          position: absolute;
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          margin-right: 5px;
+          content: "";
+          background: url(../../assets/images/home/quote-img-close.png) no-repeat 0 0;
+          background-size: 50px 50px;
+      }
+
+      .slide__content .main-name {
+          font-size: 38px;
+      }
+
+      .typed-text {
+          font-size: 20px;
+      }
+  }
+
+  @media screen and (min-width: 800px) {
+      .quote-text {
+          font-size: 30px;
+          line-height: 1.2;
+          text-align: center
+      }
+
+      .big-text {
+          font-size: 50px;
+          font-weight: bolder;
+          line-height: 0.9;
+      }
+
+      .quote-text::before {
+          display: inline-block;
+          height: 80px;
+          width: 80px;
+          margin-right: 5px;
+          content: "";
+          background: url(../../assets/images/home/quote-img.png) no-repeat 0 0;
+          background-size: 80px 80px;
+      }
+
+      .quote-text::after {
+          position: absolute;
+          display: inline-block;
+          height: 80px;
+          width: 80px;
+          margin-right: 5px;
+          content: "";
+          background: url(../../assets/images/home/quote-img-close.png) no-repeat 0 0;
+          background-size: 80px 80px;
+      }
+
+      .slide__content .main-name {
+          font-size: 58px;
+      }
+
+      .typed-text {
+          font-size: 30px;
+      }
+  }
+
+  .faq {
+      background-size: cover;
+  }
+
+  .expand {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 8px;
+      height: 40px;
+      background: #2932a9;
+      transition: width 1s, height 4s;
+  }
+
+  .expand-hov:hover .expand {
+      width: 100%;
+  }
+
+  .expand2 {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 8px;
+      height: 40px;
+      background: #2932a9;
+      transition: width 1s, height 4s;
+  }
+
+  .expand-hov:hover .expand2 {
+      width: 700px;
+  }
+
+  .expandcontact {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 7px;
+      height: 40px;
+      background: #2932a9;
+      transition: width 1s, height 4s;
+  }
+
+  .contact:hover .expandcontact {
+      width: 350px;
+
+  }
+
+  .faqexpand {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 8px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .faq:hover .faqexpand {
+      width: 250px;
+  }
+    
+.btn-custom-color{
+    background-color: #2932a9;
+}
+
+  /*Courses we offer*/
+
+  .courseexpand {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 8px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .courses:hover .courseexpand {
+      width: 400px;
+  }
+
+
+  .aboutfounder {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 2px;
+      height: 45px;
+      background: #222222;
+      transition: 1s;
+  }
+
+  .aboutfounder-h:hover .aboutfounder {
+      width: 500px;
+  }
+  /*verticles we offer*/
+
+  .verticleexpand {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 50px;
+      height: 45px;
+      background: #007BFF;
+      transition: 1s;
+  }
+
+  .hoververticle:hover .verticleexpand {
+      width: 360px;
+  }
+
+
+/*Gallery*/
+
+  .floor1 {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 5px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .floor1h:hover .floor1 {
+      width: 380px;
+  }
+
+
+  /*RND*/
+
+  .rnd1 {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 4px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .randd1:hover .rnd1 {
+      width: 620px;
+  }
+
+  .rnd2 {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 4px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .randd2:hover .rnd2 {
+      width: 500px;
+  }
+
+  .rnd3 {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      margin-top: 4px;
+      height: 40px;
+      background: #2932a9;
+      transition: 1s;
+  }
+
+  .randd3:hover .rnd3 {
+      width: 625px;
+  }.text-right span{
+    color:#007bff!important;
+}.text-right a{
+    color:white!important;
+}.owl-nav.disabled {
+    display: none!important;
+}
+
+
